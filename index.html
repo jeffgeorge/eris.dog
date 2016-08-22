@@ -18,18 +18,52 @@
       p.small {
         font-size: 0.8em;
       }
+      
+      .jiggle {
+          -webkit-animation: jiggle 0.5s infinite;
+          -moz-animation-duration: 0.5s;
+          -moz-animation-name: jiggle;
+          -moz-animation-iteration-count: infinite;
+          -webkit-transform: rotate(-1.5deg);
+          -moz-transform: rotate(-1.5deg);
+      }
+
+      @-moz-keyframes jiggle {
+          0% {
+              -moz-transform: rotate(-0.75deg);
+          }
+          50% {
+              -moz-transform: rotate(0.75deg);
+          }
+      }
+
+      @-webkit-keyframes jiggle {
+          0% {
+              -webkit-transform: rotate(-0.75deg);
+              }
+          50% {
+              -webkit-transform: rotate(0.75deg);
+          }
+      }
     </style>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
+    <script><!--
+    $(function () { $('.hover-to-jiggle').hover(function (e) {  $(this).toggleClass('jiggle');  
+        return false; 
+      });
+    });
+    --></script>
   </head>
   <body>
     <p>
       <em>Current Eris Status: Sufficiently Exhausted from Walkies<br/>(and/or from attempting to disembowel her stuffed Trash Panda)</em>
     <p>
       <a href="https://goo.gl/photos/iVvSympn2dkzaBK38">
-        <img class="circle-crop" src="https://lh3.googleusercontent.com/JUH2kQosomeQcY8pfolSqqvkS4IbH187Hzy7jhbWwno6TZBsR-sFCH9YI2ZcjEqrvxJ1I0JIKBck51HQIwsBLWA0NTNRiyqaaJLEzL5Khcn9ajTeXwA9PweEhot7AGuDOn5crNgez6rmwUT8BKcFkxEHSHpGcHx4H1HCvOgg03MoiJUZinKYfIG8-_81Oely-EnZFdMU-_YQHBsO3H5PCzbiqMHz_3GMwJfspJtbi2T7qVnx7X22TeQxKiRu7TeI-zAWKXXs-dr5lVB7wMivcxhyjyIO97ZsVWr2FkNlRR2uyM466zSr9nJP3EyLrnUPkSLCVeRBET2wbIZ14Z1CX6g0tx0vI4ptr_QuxO2SULMeEWfVMyCneP32Iq1uoRUobT_F8uXegs-ecrecVFcMI4eafMQYzHE_5yIDBwN4wJq7TyqTDd7x-B18mIBauaabd1Ssgx2D88NqavmnGDvmmEG4rWplPQCLyMrxNY6UTHJnWXmbntFxwPK6rNuoOM6Zxqw4ouUe_eruZjcSd6PxdjQA0q-wYfaSQuosAdB83cnJpaJXpqQdLbxndD-fhGfZnCzu_c9H5juCeTQFO-mUj0heEEK-UtujhduI0ne9-DdLAet-=s800-no" />
+        <img class="hover-to-jiggle circle-crop" src="https://lh3.googleusercontent.com/JUH2kQosomeQcY8pfolSqqvkS4IbH187Hzy7jhbWwno6TZBsR-sFCH9YI2ZcjEqrvxJ1I0JIKBck51HQIwsBLWA0NTNRiyqaaJLEzL5Khcn9ajTeXwA9PweEhot7AGuDOn5crNgez6rmwUT8BKcFkxEHSHpGcHx4H1HCvOgg03MoiJUZinKYfIG8-_81Oely-EnZFdMU-_YQHBsO3H5PCzbiqMHz_3GMwJfspJtbi2T7qVnx7X22TeQxKiRu7TeI-zAWKXXs-dr5lVB7wMivcxhyjyIO97ZsVWr2FkNlRR2uyM466zSr9nJP3EyLrnUPkSLCVeRBET2wbIZ14Z1CX6g0tx0vI4ptr_QuxO2SULMeEWfVMyCneP32Iq1uoRUobT_F8uXegs-ecrecVFcMI4eafMQYzHE_5yIDBwN4wJq7TyqTDd7x-B18mIBauaabd1Ssgx2D88NqavmnGDvmmEG4rWplPQCLyMrxNY6UTHJnWXmbntFxwPK6rNuoOM6Zxqw4ouUe_eruZjcSd6PxdjQA0q-wYfaSQuosAdB83cnJpaJXpqQdLbxndD-fhGfZnCzu_c9H5juCeTQFO-mUj0heEEK-UtujhduI0ne9-DdLAet-=s800-no" />
       </a>
     </p>
     <p class="small">
-      Poke Eris for more photos.
+      Poke Eris for more photos
     </p>
   </body>
 </html>
