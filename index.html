@@ -11,48 +11,18 @@
       }
       
       .circle-crop {
-        width: 45%;
+        width: 75%;
         border-radius: 50%;
+      }
+
+      @media only screen and (min-width : 1224px) {
+        .circle-crop { width: 45%; }
       }
       
       p.small {
         font-size: 0.8em;
       }
-      
-      .jiggle {
-          -webkit-animation: jiggle 0.5s infinite;
-          -moz-animation-duration: 0.5s;
-          -moz-animation-name: jiggle;
-          -moz-animation-iteration-count: infinite;
-          -webkit-transform: rotate(-1.5deg);
-          -moz-transform: rotate(-1.5deg);
-      }
-
-      @-moz-keyframes jiggle {
-          0% {
-              -moz-transform: rotate(-0.75deg);
-          }
-          50% {
-              -moz-transform: rotate(0.75deg);
-          }
-      }
-
-      @-webkit-keyframes jiggle {
-          0% {
-              -webkit-transform: rotate(-0.75deg);
-              }
-          50% {
-              -webkit-transform: rotate(0.75deg);
-          }
-      }
     </style>
-    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
-    <script><!--
-    $(function () { $('.hover-to-jiggle').hover(function (e) {  $(this).toggleClass('jiggle');  
-        return false; 
-      });
-    });
-    --></script>
   </head>
   <body>
     <p>
