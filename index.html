@@ -9,16 +9,20 @@
         font-size: 1.5em;
         font-family: monospace;
       }
-      
-      .circle-crop {
-        width: 75%;
+      .center-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .center-flex-item {
+        flex: 1;
+        max-width: 75%;
         border-radius: 50%;
+        border: 3px solid #CCC;
       }
-
-      @media only screen and (min-width : 1224px) {
-        .circle-crop { width: 45%; }
+      .center-flex-item:hover{
+        border-color: #AAA;
       }
-      
       p.small {
         font-size: 0.8em;
       }
@@ -32,15 +36,15 @@
   </head>
   <body>
     <p>
-      <em>Current Eris Status: Watching over her new brother</em>
+      <em>Current Eris Status: m a j e s t i c</em>
     </p>
-    <p>
+    <div class="center-flex">
       <a href="https://goo.gl/photos/iVvSympn2dkzaBK38">
-        <img class="circle-crop" src="https://lh3.googleusercontent.com/a55T24Rm7TqGu5WMnbhotSGAzfbaNGlJka1NIWWfArXx9iwpKpTakRcE7LrePvhs9Dd4WbbXSoU3zEBqjRGZsbvGUoJelEz1lUcMUSk0BljZShWPqFUkrhI87BKpdyUhdoA3dk2VD_E=s800-no" />
+        <img class="center-flex-item" src="https://lh3.googleusercontent.com/zKOADFUEEhorQTDfRD2VrIjx6wcG-OcAjb4IscbzVX3tGYL18A2sjczMIXPf0QNGUjqgy8wci1bVmjCR7-GedRIWnXMxzPVkSlGacqJfi29H5RCerS4dOV2_EqdSh-cQTyKLN5sFEHc=s800-no" />
       </a>
-    </p>
+    </div>
     <p class="small">
-      Boop Eris (and Evan) for more photos
+      Boop Eris for more photos
     </p>
   </body>
 </html>
